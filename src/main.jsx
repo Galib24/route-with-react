@@ -62,7 +62,8 @@ loader: () => fetch(`https://jsonplaceholder.typicode.com/posts`)
   },
   {
 path: 'post/:postId',
-element: <PostDetail></PostDetail>.
+element: <PostDetail></PostDetail>,
+loader: ({params}) => fetch(`https://jsonplaceholder.typicode.com/posts/${params.postId}`)
   },
   {
     path: 'about',
