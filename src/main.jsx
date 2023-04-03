@@ -72,6 +72,11 @@ loader: ({params}) => fetch(`https://jsonplaceholder.typicode.com/posts/${params
   {
     path: 'contact',
     element: <Contact></Contact>
+  },
+  {
+    path: '*',
+    element: <div>page not found 404</div>
+
   }
 ]
   }
